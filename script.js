@@ -16,13 +16,13 @@ $(function(){
   
   
   var imgPrefix   = "./ads/";
-  var randNum     = Math.floor(Math.random() * (8 - 0 + 1)) + 0; /* http://stackoverflow.com/a/1527834/477958 */
-  var topAdBanner = $('#topad > a > img');
+  var randNum     = Math.floor(Math.random() * (8 - 0 + 1)) + 0; 
+  var sideAdBanner = $('#sidepad > a > img');
   
   var newBannerImg  = imgPrefix + adBanners[randNum];
   var newBannerLink = bannerLinks[randNum];
   
   // update new img src and link HREF value
-  $(topAdBanner).attr('src',newBannerImg);
-  $('#topad > a').attr('href',newBannerLink);
+  $(sideAdBanner).attr('src',newBannerImg);
+  $('#sidepad > a').attr('href',newBannerLink);
 });
